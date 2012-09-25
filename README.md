@@ -4,6 +4,16 @@ discrete-math-mobile-app
 A mobile java app created in Netbeans with J2ME platform. 
 This app is used for solving common Discrete Math calculations.
 
+How to install
+--------------
+
+Click the "ZIP" button above to download. Extract the zip file and open the "put these files on your phone" folder.
+Copy the 2 files inside and put to your phone (via memory card or usb mass storage.. Just like how you put music to
+your phone). Then on your phone, open the file via file manager and install. That's it!
+
+PS: This mobile app runs on almost every phone that supports Java (If you have Java games on your phone then
+you're good to go).
+
 The story behind
 ----------------
 
@@ -21,3 +31,4 @@ I'll be updating it from time to time if I find another common calculations.
 
 Screenshots
 -----------
+![Discrete Math](http://i.imgur.com/YOtwY.jpg "Discrete Math Mobile Java App Screenshot")
