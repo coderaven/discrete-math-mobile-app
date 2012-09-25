@@ -1,0 +1,9 @@
+MIDlet-1: HelloMIDlet,,hello.HelloMIDlet
+MIDlet-Description: Discrete Math Helper and Calculator
+MIDlet-Jar-Size: 118950
+MIDlet-Jar-URL: Discrete_Math.jar
+MIDlet-Name: Discrete Math Operations
+MIDlet-Vendor: Raven G. Duran
+MIDlet-Version: 1.0
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0
