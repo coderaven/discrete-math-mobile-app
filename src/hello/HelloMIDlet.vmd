@@ -132,7 +132,7 @@
                 <Component componentID="14" typeID="Cjavax.microedition.lcdui.Form">
                     <Property name="instanceName" typeID="Pjava.lang.String" value="VModulo"/>
                     <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
-                    <Property name="commands" typeID="1C#CommandEventSource" value="A2:3_R193_R31"/>
+                    <Property name="commands" typeID="1C#CommandEventSource" value="A3:3_R193_R314_R196"/>
                     <Property name="title" typeID="Pjava.lang.String" value="VModulu"/>
                     <Property name="commandListener" typeID="C#CommandListener" value="R7"/>
                     <Property name="items" typeID="1Cjavax.microedition.lcdui.Item" value="A3:3_R243_R263_R27"/>
@@ -180,11 +180,20 @@
                             <Property name="alert" typeID="Cjavax.microedition.lcdui.Alert" value="R89"/>
                         </Component>
                     </Component>
+                    <Component componentID="196" typeID="C#CommandEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R207"/>
+                        <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R14"/>
+                        <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R193"/>
+                        <Component componentID="207" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R196"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R46"/>
+                        </Component>
+                    </Component>
                 </Component>
                 <Component componentID="37" typeID="Cjavax.microedition.lcdui.Form">
                     <Property name="instanceName" typeID="Pjava.lang.String" value="VPrimeFactor"/>
                     <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
-                    <Property name="commands" typeID="1C#CommandEventSource" value="A2:3_R393_R43"/>
+                    <Property name="commands" typeID="1C#CommandEventSource" value="A3:3_R393_R434_R195"/>
                     <Property name="title" typeID="Pjava.lang.String" value="VPrime Factorization"/>
                     <Property name="commandListener" typeID="C#CommandListener" value="R7"/>
                     <Property name="items" typeID="1Cjavax.microedition.lcdui.Item" value="A1:3_R41"/>
@@ -215,6 +224,15 @@
                         <Property name="text" typeID="Pjava.lang.String" value="V"/>
                         <Property name="maxSize" typeID="Pint" value="V32"/>
                         <Property name="constraints" typeID="Pint" value="V0"/>
+                    </Component>
+                    <Component componentID="195" typeID="C#CommandEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R206"/>
+                        <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R37"/>
+                        <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R193"/>
+                        <Component componentID="206" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R195"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R46"/>
+                        </Component>
                     </Component>
                 </Component>
                 <Component componentID="46" typeID="Cjavax.microedition.lcdui.Form">
@@ -281,7 +299,7 @@
                 <Component componentID="79" typeID="Cjavax.microedition.lcdui.Form">
                     <Property name="instanceName" typeID="Pjava.lang.String" value="VGCD"/>
                     <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
-                    <Property name="commands" typeID="1C#CommandEventSource" value="A2:3_R823_R88"/>
+                    <Property name="commands" typeID="1C#CommandEventSource" value="A3:3_R823_R884_R194"/>
                     <Property name="title" typeID="Pjava.lang.String" value="VGCD"/>
                     <Property name="commandListener" typeID="C#CommandListener" value="R7"/>
                     <Property name="items" typeID="1Cjavax.microedition.lcdui.Item" value="A2:3_R843_R85"/>
@@ -322,11 +340,20 @@
                             <Property name="alert" typeID="Cjavax.microedition.lcdui.Alert" value="R89"/>
                         </Component>
                     </Component>
+                    <Component componentID="194" typeID="C#CommandEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R205"/>
+                        <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R79"/>
+                        <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R193"/>
+                        <Component componentID="205" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R194"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R46"/>
+                        </Component>
+                    </Component>
                 </Component>
                 <Component componentID="92" typeID="Cjavax.microedition.lcdui.Form">
                     <Property name="instanceName" typeID="Pjava.lang.String" value="VLCM"/>
                     <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
-                    <Property name="commands" typeID="1C#CommandEventSource" value="A2:3_R953_R99"/>
+                    <Property name="commands" typeID="1C#CommandEventSource" value="A3:3_R953_R994_R197"/>
                     <Property name="title" typeID="Pjava.lang.String" value="VLCM"/>
                     <Property name="commandListener" typeID="C#CommandListener" value="R7"/>
                     <Property name="items" typeID="1Cjavax.microedition.lcdui.Item" value="A2:4_R1014_R102"/>
@@ -367,6 +394,15 @@
                             <Property name="alert" typeID="Cjavax.microedition.lcdui.Alert" value="R89"/>
                         </Component>
                     </Component>
+                    <Component componentID="197" typeID="C#CommandEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R208"/>
+                        <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R92"/>
+                        <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R193"/>
+                        <Component componentID="208" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R197"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R46"/>
+                        </Component>
+                    </Component>
                 </Component>
                 <Component componentID="89" typeID="Cjavax.microedition.lcdui.Alert">
                     <Property name="instanceName" typeID="Pjava.lang.String" value="VResultBox"/>
@@ -378,7 +414,7 @@
                 <Component componentID="107" typeID="Cjavax.microedition.lcdui.Form">
                     <Property name="instanceName" typeID="Pjava.lang.String" value="VDeciToBinary"/>
                     <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
-                    <Property name="commands" typeID="1C#CommandEventSource" value="A2:4_R1084_R111"/>
+                    <Property name="commands" typeID="1C#CommandEventSource" value="A3:4_R1084_R1114_R198"/>
                     <Property name="title" typeID="Pjava.lang.String" value="VDecimal To Binary"/>
                     <Property name="commandListener" typeID="C#CommandListener" value="R7"/>
                     <Property name="items" typeID="1Cjavax.microedition.lcdui.Item" value="A1:4_R115"/>
@@ -410,6 +446,15 @@
                         <Property name="maxSize" typeID="Pint" value="V32"/>
                         <Property name="constraints" typeID="Pint" value="V0"/>
                     </Component>
+                    <Component componentID="198" typeID="C#CommandEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R209"/>
+                        <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R107"/>
+                        <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R193"/>
+                        <Component componentID="209" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R198"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R46"/>
+                        </Component>
+                    </Component>
                 </Component>
                 <Component componentID="117" typeID="Corg.netbeans.microedition.lcdui.SplashScreen">
                     <Property name="instanceName" typeID="Pjava.lang.String" value="VsplashScreen"/>
@@ -434,7 +479,7 @@
                 <Component componentID="142" typeID="Cjavax.microedition.lcdui.Form">
                     <Property name="instanceName" typeID="Pjava.lang.String" value="VDeciToHexa"/>
                     <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
-                    <Property name="commands" typeID="1C#CommandEventSource" value="A2:4_R1434_R146"/>
+                    <Property name="commands" typeID="1C#CommandEventSource" value="A3:4_R1434_R1464_R199"/>
                     <Property name="title" typeID="Pjava.lang.String" value="VDecimal To Hexadecimal"/>
                     <Property name="commandListener" typeID="C#CommandListener" value="R7"/>
                     <Property name="items" typeID="1Cjavax.microedition.lcdui.Item" value="A1:4_R151"/>
@@ -466,11 +511,20 @@
                         <Property name="maxSize" typeID="Pint" value="V32"/>
                         <Property name="constraints" typeID="Pint" value="V0"/>
                     </Component>
+                    <Component componentID="199" typeID="C#CommandEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R210"/>
+                        <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R142"/>
+                        <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R193"/>
+                        <Component componentID="210" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R199"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R46"/>
+                        </Component>
+                    </Component>
                 </Component>
                 <Component componentID="133" typeID="Cjavax.microedition.lcdui.Form">
                     <Property name="instanceName" typeID="Pjava.lang.String" value="VDeciToOcta"/>
                     <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
-                    <Property name="commands" typeID="1C#CommandEventSource" value="A2:4_R1344_R136"/>
+                    <Property name="commands" typeID="1C#CommandEventSource" value="A3:4_R1344_R1364_R200"/>
                     <Property name="title" typeID="Pjava.lang.String" value="VDecimal To Octadecimal"/>
                     <Property name="commandListener" typeID="C#CommandListener" value="R7"/>
                     <Property name="items" typeID="1Cjavax.microedition.lcdui.Item" value="A1:4_R140"/>
@@ -502,11 +556,20 @@
                             <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R46"/>
                         </Component>
                     </Component>
+                    <Component componentID="200" typeID="C#CommandEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R211"/>
+                        <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R133"/>
+                        <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R193"/>
+                        <Component componentID="211" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R200"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R46"/>
+                        </Component>
+                    </Component>
                 </Component>
                 <Component componentID="156" typeID="Cjavax.microedition.lcdui.Form">
                     <Property name="instanceName" typeID="Pjava.lang.String" value="VBinaryToDeci"/>
                     <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
-                    <Property name="commands" typeID="1C#CommandEventSource" value="A2:4_R1594_R162"/>
+                    <Property name="commands" typeID="1C#CommandEventSource" value="A3:4_R1594_R1624_R201"/>
                     <Property name="title" typeID="Pjava.lang.String" value="VBinary To Decimal"/>
                     <Property name="commandListener" typeID="C#CommandListener" value="R7"/>
                     <Property name="items" typeID="1Cjavax.microedition.lcdui.Item" value="A1:4_R180"/>
@@ -533,11 +596,20 @@
                         <Property name="maxSize" typeID="Pint" value="V32"/>
                         <Property name="constraints" typeID="Pint" value="V0"/>
                     </Component>
+                    <Component componentID="201" typeID="C#CommandEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R212"/>
+                        <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R156"/>
+                        <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R193"/>
+                        <Component componentID="212" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R201"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R46"/>
+                        </Component>
+                    </Component>
                 </Component>
                 <Component componentID="157" typeID="Cjavax.microedition.lcdui.Form">
                     <Property name="instanceName" typeID="Pjava.lang.String" value="VOctaToDeci"/>
                     <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
-                    <Property name="commands" typeID="1C#CommandEventSource" value="A2:4_R1664_R169"/>
+                    <Property name="commands" typeID="1C#CommandEventSource" value="A3:4_R1664_R1694_R202"/>
                     <Property name="title" typeID="Pjava.lang.String" value="VOctadecimal To Decimal"/>
                     <Property name="commandListener" typeID="C#CommandListener" value="R7"/>
                     <Property name="items" typeID="1Cjavax.microedition.lcdui.Item" value="A1:4_R181"/>
@@ -569,11 +641,20 @@
                         <Property name="maxSize" typeID="Pint" value="V32"/>
                         <Property name="constraints" typeID="Pint" value="V0"/>
                     </Component>
+                    <Component componentID="202" typeID="C#CommandEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R213"/>
+                        <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R157"/>
+                        <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R193"/>
+                        <Component componentID="213" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R202"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R46"/>
+                        </Component>
+                    </Component>
                 </Component>
                 <Component componentID="158" typeID="Cjavax.microedition.lcdui.Form">
                     <Property name="instanceName" typeID="Pjava.lang.String" value="VHexaToDeci"/>
                     <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
-                    <Property name="commands" typeID="1C#CommandEventSource" value="A2:4_R1734_R176"/>
+                    <Property name="commands" typeID="1C#CommandEventSource" value="A3:4_R1734_R1764_R203"/>
                     <Property name="title" typeID="Pjava.lang.String" value="VHexadecimal To Decimal"/>
                     <Property name="commandListener" typeID="C#CommandListener" value="R7"/>
                     <Property name="items" typeID="1Cjavax.microedition.lcdui.Item" value="A1:4_R182"/>
@@ -605,6 +686,15 @@
                         <Property name="maxSize" typeID="Pint" value="V32"/>
                         <Property name="constraints" typeID="Pint" value="V0"/>
                     </Component>
+                    <Component componentID="203" typeID="C#CommandEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R204"/>
+                        <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R158"/>
+                        <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R193"/>
+                        <Component componentID="204" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R203"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R46"/>
+                        </Component>
+                    </Component>
                 </Component>
             </Component>
             <Component componentID="13" typeID="C#ResourcesCategory">
@@ -618,19 +708,19 @@
         </Component>
     </Document>
     <FlowScene version="1">
-        <Node componentID="92" descriptorID="componentNode92" x="130" y="195"/>
-        <Node componentID="89" descriptorID="componentNode89" x="-60" y="88"/>
-        <Node componentID="157" descriptorID="componentNode157" x="-526" y="77"/>
-        <Node componentID="142" descriptorID="componentNode142" x="-214" y="-103"/>
-        <Node componentID="156" descriptorID="componentNode156" x="-530" y="-53"/>
-        <Node componentID="117" descriptorID="componentNode117" x="80" y="6"/>
         <Node componentID="14" descriptorID="componentNode14" x="-19" y="308"/>
-        <Node componentID="37" descriptorID="componentNode37" x="-204" y="310"/>
-        <Node componentID="46" descriptorID="componentNode46" x="-198" y="87"/>
-        <Node componentID="79" descriptorID="componentNode79" x="-363" y="255"/>
-        <Node componentID="133" descriptorID="componentNode133" x="-383" y="-102"/>
-        <Node componentID="158" descriptorID="componentNode158" x="-500" y="206"/>
-        <Node componentID="2" descriptorID="componentNode2" x="-374" y="90"/>
+        <Node componentID="46" descriptorID="componentNode46" x="-191" y="99"/>
         <Node componentID="107" descriptorID="componentNode107" x="-45" y="-100"/>
+        <Node componentID="157" descriptorID="componentNode157" x="-585" y="76"/>
+        <Node componentID="117" descriptorID="componentNode117" x="80" y="6"/>
+        <Node componentID="2" descriptorID="componentNode2" x="-374" y="90"/>
+        <Node componentID="79" descriptorID="componentNode79" x="-363" y="255"/>
+        <Node componentID="37" descriptorID="componentNode37" x="-204" y="310"/>
+        <Node componentID="89" descriptorID="componentNode89" x="-60" y="88"/>
+        <Node componentID="92" descriptorID="componentNode92" x="130" y="195"/>
+        <Node componentID="133" descriptorID="componentNode133" x="-383" y="-102"/>
+        <Node componentID="156" descriptorID="componentNode156" x="-530" y="-53"/>
+        <Node componentID="142" descriptorID="componentNode142" x="-214" y="-103"/>
+        <Node componentID="158" descriptorID="componentNode158" x="-500" y="206"/>
     </FlowScene>
 </VisualDesign>

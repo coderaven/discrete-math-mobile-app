@@ -143,63 +143,84 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
                 // write pre-action user code here
 //GEN-LINE:|7-commandAction|2|159-postAction
                 // write post-action user code here
-            } else if (command == okCommand7) {//GEN-LINE:|7-commandAction|3|162-preAction
+            } else if (command == helpCommand1) {//GEN-LINE:|7-commandAction|3|201-preAction
+                // write pre-action user code here
+                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|4|201-postAction
+                // write post-action user code here
+            } else if (command == okCommand7) {//GEN-LINE:|7-commandAction|5|162-preAction
                 // write pre-action user code here
                 String binary = this.textField10.getString(); 
                 getResultBox().setString("The Decimal Equivalent is: \n" + Integer.parseInt(binary, 2));
-                switchDisplayable(getResultBox(), getBinaryToDeci());//GEN-LINE:|7-commandAction|4|162-postAction
+                switchDisplayable(getResultBox(), getBinaryToDeci());//GEN-LINE:|7-commandAction|6|162-postAction
                 // write post-action user code here
-            }//GEN-BEGIN:|7-commandAction|5|108-preAction
+            }//GEN-BEGIN:|7-commandAction|7|108-preAction
         } else if (displayable == DeciToBinary) {
-            if (command == exitCommand) {//GEN-END:|7-commandAction|5|108-preAction
+            if (command == exitCommand) {//GEN-END:|7-commandAction|7|108-preAction
                 // write pre-action user code here
-                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|6|108-postAction
+                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|8|108-postAction
                 // write post-action user code here
-            } else if (command == okCommand5) {//GEN-LINE:|7-commandAction|7|111-preAction
+            } else if (command == helpCommand1) {//GEN-LINE:|7-commandAction|9|198-preAction
+                // write pre-action user code here
+                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|10|198-postAction
+                // write post-action user code here
+            } else if (command == okCommand5) {//GEN-LINE:|7-commandAction|11|111-preAction
                 // write pre-action user code here
                 int deci = Integer.parseInt(this.textField7.getString()); 
                 getResultBox().setString("The Binary Equivalent is: \n" + Integer.toBinaryString(deci) );
-                switchDisplayable(getResultBox(), getDeciToBinary());//GEN-LINE:|7-commandAction|8|111-postAction
+                switchDisplayable(getResultBox(), getDeciToBinary());//GEN-LINE:|7-commandAction|12|111-postAction
                 // write post-action user code here
-            }//GEN-BEGIN:|7-commandAction|9|143-preAction
+            }//GEN-BEGIN:|7-commandAction|13|143-preAction
         } else if (displayable == DeciToHexa) {
-            if (command == exitCommand) {//GEN-END:|7-commandAction|9|143-preAction
+            if (command == exitCommand) {//GEN-END:|7-commandAction|13|143-preAction
                 // write pre-action user code here
-                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|10|143-postAction
+                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|14|143-postAction
                 // write post-action user code here
-            } else if (command == okCommand6) {//GEN-LINE:|7-commandAction|11|146-preAction
+            } else if (command == helpCommand1) {//GEN-LINE:|7-commandAction|15|199-preAction
+                // write pre-action user code here
+                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|16|199-postAction
+                // write post-action user code here
+            } else if (command == okCommand6) {//GEN-LINE:|7-commandAction|17|146-preAction
                 // write pre-action user code here
                 int deci = Integer.parseInt(this.textField9.getString());
                 getResultBox().setString("The Hexadecimal Equivalent is: \n" + Integer.toHexString(deci) );
-                switchDisplayable(getResultBox(), getDeciToHexa());//GEN-LINE:|7-commandAction|12|146-postAction
+                switchDisplayable(getResultBox(), getDeciToHexa());//GEN-LINE:|7-commandAction|18|146-postAction
                 // write post-action user code here
-            }//GEN-BEGIN:|7-commandAction|13|134-preAction
+            }//GEN-BEGIN:|7-commandAction|19|134-preAction
         } else if (displayable == DeciToOcta) {
-            if (command == exitCommand) {//GEN-END:|7-commandAction|13|134-preAction
+            if (command == exitCommand) {//GEN-END:|7-commandAction|19|134-preAction
                 // write pre-action user code here
-                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|14|134-postAction
+                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|20|134-postAction
                 // write post-action user code here
-            } else if (command == okCommand) {//GEN-LINE:|7-commandAction|15|136-preAction
+            } else if (command == helpCommand1) {//GEN-LINE:|7-commandAction|21|200-preAction
+                // write pre-action user code here
+                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|22|200-postAction
+                // write post-action user code here
+            } else if (command == okCommand) {//GEN-LINE:|7-commandAction|23|136-preAction
                 // write pre-action user code here
                 int deci = Integer.parseInt(this.textField8.getString());
                 getResultBox().setString("The Octadecimal Equivalent is: \n" + Integer.toOctalString(deci) );
-                switchDisplayable(getResultBox(), getDeciToOcta());//GEN-LINE:|7-commandAction|16|136-postAction
+                switchDisplayable(getResultBox(), getDeciToOcta());//GEN-LINE:|7-commandAction|24|136-postAction
                 // write post-action user code here
-            }//GEN-BEGIN:|7-commandAction|17|82-preAction
+            }//GEN-BEGIN:|7-commandAction|25|82-preAction
         } else if (displayable == GCD) {
-            if (command == exitCommand) {//GEN-END:|7-commandAction|17|82-preAction
+            if (command == exitCommand) {//GEN-END:|7-commandAction|25|82-preAction
                 // write pre-action user code here
-                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|18|82-postAction
+                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|26|82-postAction
                 // write post-action user code here
-            } else if (command == okCommand3) {//GEN-LINE:|7-commandAction|19|88-preAction
+            } else if (command == helpCommand1) {//GEN-LINE:|7-commandAction|27|194-preAction
+                // write pre-action user code here
+                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|28|194-postAction
+                // write post-action user code here
+            } else if (command == okCommand3) {//GEN-LINE:|7-commandAction|29|88-preAction
                 // write pre-action user code here
                 int a1 = Integer.parseInt(this.textField3.getString());
                 int b1 = Integer.parseInt(this.textField4.getString());
                 int tempG,gcdResult;
-                String gcdSteps = "";
+                String gcdSteps = "GCD(" + a1 + "," + b1 + "):\n";
                 
                 while (a1 != 0 && b1 != 0){
-                    gcdSteps += "GCD(" + a1 + "," + b1 + ") = GCD (" + b1 + "," + a1 + " % " + b1 + ")\n";
+                    //gcdSteps += "GCD(" + a1 + "," + b1 + ") = GCD (" + b1 + "," + a1 + " % " + b1 + ")\n";
+                    gcdSteps += "\n" + a1 + " = " + b1 + "(" + (int)(a1/b1) + ") + " + (a1%b1);
                     tempG = a1;
                     a1 = b1;
                     b1 = tempG % b1;
@@ -208,30 +229,38 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
                 if (a1 == 0) gcdResult = b1;
                 else gcdResult = a1;
                 
-                gcdSteps += "\nGCD : " + gcdResult;
+                gcdSteps += "\n\nGCD : " + gcdResult;
                 
                 getResultBox().setString("Steps:\n\n" + gcdSteps);
-                switchDisplayable(getResultBox(), getGCD());//GEN-LINE:|7-commandAction|20|88-postAction
+                switchDisplayable(getResultBox(), getGCD());//GEN-LINE:|7-commandAction|30|88-postAction
                 // write post-action user code here
-            }//GEN-BEGIN:|7-commandAction|21|173-preAction
+            }//GEN-BEGIN:|7-commandAction|31|173-preAction
         } else if (displayable == HexaToDeci) {
-            if (command == exitCommand) {//GEN-END:|7-commandAction|21|173-preAction
+            if (command == exitCommand) {//GEN-END:|7-commandAction|31|173-preAction
                 // write pre-action user code here
-                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|22|173-postAction
+                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|32|173-postAction
                 // write post-action user code here
-            } else if (command == okCommand9) {//GEN-LINE:|7-commandAction|23|176-preAction
+            } else if (command == helpCommand1) {//GEN-LINE:|7-commandAction|33|203-preAction
+                // write pre-action user code here
+                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|34|203-postAction
+                // write post-action user code here
+            } else if (command == okCommand9) {//GEN-LINE:|7-commandAction|35|176-preAction
                 // write pre-action user code here
                 String hexa = this.textField12.getString(); 
-                getResultBox().setString("The Hexadecimal Equivalent is: \n" + Integer.parseInt(hexa, 16));
-                switchDisplayable(getResultBox(), getHexaToDeci());//GEN-LINE:|7-commandAction|24|176-postAction
+                getResultBox().setString("The Decimal Equivalent is: \n" + Integer.parseInt(hexa, 16));
+                switchDisplayable(getResultBox(), getHexaToDeci());//GEN-LINE:|7-commandAction|36|176-postAction
                 // write post-action user code here
-            }//GEN-BEGIN:|7-commandAction|25|95-preAction
+            }//GEN-BEGIN:|7-commandAction|37|95-preAction
         } else if (displayable == LCM) {
-            if (command == exitCommand) {//GEN-END:|7-commandAction|25|95-preAction
+            if (command == exitCommand) {//GEN-END:|7-commandAction|37|95-preAction
                 // write pre-action user code here
-                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|26|95-postAction
+                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|38|95-postAction
                 // write post-action user code here
-            } else if (command == okCommand4) {//GEN-LINE:|7-commandAction|27|99-preAction
+            } else if (command == helpCommand1) {//GEN-LINE:|7-commandAction|39|197-preAction
+                // write pre-action user code here
+                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|40|197-postAction
+                // write post-action user code here
+            } else if (command == okCommand4) {//GEN-LINE:|7-commandAction|41|99-preAction
                 // write pre-action user code here
                 int a1 = Integer.parseInt(this.textField5.getString());
                 int b1 = Integer.parseInt(this.textField6.getString());
@@ -251,15 +280,15 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
                 
                 int lcm = (iA * iB) / gcdResult;
                 getResultBox().setString("The LCM is : " + lcm);
-                switchDisplayable(getResultBox(), getLCM());//GEN-LINE:|7-commandAction|28|99-postAction
+                switchDisplayable(getResultBox(), getLCM());//GEN-LINE:|7-commandAction|42|99-postAction
                 // write post-action user code here
-            }//GEN-BEGIN:|7-commandAction|29|52-preAction
+            }//GEN-BEGIN:|7-commandAction|43|52-preAction
         } else if (displayable == Menu) {
-            if (command == exitCommand2) {//GEN-END:|7-commandAction|29|52-preAction
+            if (command == exitCommand2) {//GEN-END:|7-commandAction|43|52-preAction
                 // write pre-action user code here
-                exitMIDlet();//GEN-LINE:|7-commandAction|30|52-postAction
+                exitMIDlet();//GEN-LINE:|7-commandAction|44|52-postAction
                 // write post-action user code here
-            } else if (command == okCommand2) {//GEN-LINE:|7-commandAction|31|57-preAction
+            } else if (command == okCommand2) {//GEN-LINE:|7-commandAction|45|57-preAction
                 // write pre-action user code here
                 if (choiceGroup.getSelectedIndex() == 0){
                     switchDisplayable(null,getModulo());
@@ -282,41 +311,53 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
                 } else if (choiceGroup.getSelectedIndex() == 9){
                     switchDisplayable(null,getHexaToDeci());
                 }
-//GEN-LINE:|7-commandAction|32|57-postAction
+//GEN-LINE:|7-commandAction|46|57-postAction
                 // write post-a ction user code here
-            }//GEN-BEGIN:|7-commandAction|33|19-preAction
+            }//GEN-BEGIN:|7-commandAction|47|19-preAction
         } else if (displayable == Modulo) {
-            if (command == exitCommand) {//GEN-END:|7-commandAction|33|19-preAction
+            if (command == exitCommand) {//GEN-END:|7-commandAction|47|19-preAction
                 // write pre-action user code here
-                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|34|19-postAction
+                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|48|19-postAction
                 // write post-action user code here
-            } else if (command == okCommand) {//GEN-LINE:|7-commandAction|35|31-preAction
+            } else if (command == helpCommand1) {//GEN-LINE:|7-commandAction|49|196-preAction
+                // write pre-action user code here
+                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|50|196-postAction
+                // write post-action user code here
+            } else if (command == okCommand) {//GEN-LINE:|7-commandAction|51|31-preAction
                 // write pre-action user code here
                 int a = Integer.parseInt(this.textField.getString());
                 int b = Integer.parseInt(this.textField1.getString());
                 int modulo = a % b;
                 getResultBox().setString("Modulo: " + modulo);
-                switchDisplayable(getResultBox(), getModulo());//GEN-LINE:|7-commandAction|36|31-postAction
+                switchDisplayable(getResultBox(), getModulo());//GEN-LINE:|7-commandAction|52|31-postAction
                 // write post-action user code here
-            }//GEN-BEGIN:|7-commandAction|37|166-preAction
+            }//GEN-BEGIN:|7-commandAction|53|166-preAction
         } else if (displayable == OctaToDeci) {
-            if (command == exitCommand) {//GEN-END:|7-commandAction|37|166-preAction
+            if (command == exitCommand) {//GEN-END:|7-commandAction|53|166-preAction
                 // write pre-action user code here
-                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|38|166-postAction
+                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|54|166-postAction
                 // write post-action user code here
-            } else if (command == okCommand8) {//GEN-LINE:|7-commandAction|39|169-preAction
+            } else if (command == helpCommand1) {//GEN-LINE:|7-commandAction|55|202-preAction
+                // write pre-action user code here
+                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|56|202-postAction
+                // write post-action user code here
+            } else if (command == okCommand8) {//GEN-LINE:|7-commandAction|57|169-preAction
                 // write pre-action user code here
                 String octa = this.textField11.getString(); 
-                getResultBox().setString("The Octadecimal Equivalent is: \n" + Integer.parseInt(octa, 8));
-                switchDisplayable(getResultBox(), getOctaToDeci());//GEN-LINE:|7-commandAction|40|169-postAction
+                getResultBox().setString("The Decimal Equivalent is: \n" + Integer.parseInt(octa, 8));
+                switchDisplayable(getResultBox(), getOctaToDeci());//GEN-LINE:|7-commandAction|58|169-postAction
                 // write post-action user code here
-            }//GEN-BEGIN:|7-commandAction|41|39-preAction
+            }//GEN-BEGIN:|7-commandAction|59|39-preAction
         } else if (displayable == PrimeFactor) {
-            if (command == exitCommand1) {//GEN-END:|7-commandAction|41|39-preAction
+            if (command == exitCommand1) {//GEN-END:|7-commandAction|59|39-preAction
                 // write pre-action user code here
-                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|42|39-postAction
+                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|60|39-postAction
                 // write post-action user code here
-            } else if (command == okCommand1) {//GEN-LINE:|7-commandAction|43|43-preAction
+            } else if (command == helpCommand1) {//GEN-LINE:|7-commandAction|61|195-preAction
+                // write pre-action user code here
+                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|62|195-postAction
+                // write post-action user code here
+            } else if (command == okCommand1) {//GEN-LINE:|7-commandAction|63|43-preAction
                 // write pre-action user code here
                 int pNum = Integer.parseInt(this.textField2.getString());
                 int initial = pNum;
@@ -337,19 +378,19 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
                 }
                         
                 getResultBox().setString(pFactors);
-                switchDisplayable(getResultBox(), getPrimeFactor());//GEN-LINE:|7-commandAction|44|43-postAction
+                switchDisplayable(getResultBox(), getPrimeFactor());//GEN-LINE:|7-commandAction|64|43-postAction
                 // write post-action user code here
-            }//GEN-BEGIN:|7-commandAction|45|119-preAction
+            }//GEN-BEGIN:|7-commandAction|65|119-preAction
         } else if (displayable == splashScreen) {
-            if (command == SplashScreen.DISMISS_COMMAND) {//GEN-END:|7-commandAction|45|119-preAction
+            if (command == SplashScreen.DISMISS_COMMAND) {//GEN-END:|7-commandAction|65|119-preAction
                 // write pre-action user code here
-                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|46|119-postAction
+                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|66|119-postAction
                 // write post-action user code here
-            }//GEN-BEGIN:|7-commandAction|47|7-postCommandAction
-        }//GEN-END:|7-commandAction|47|7-postCommandAction
+            }//GEN-BEGIN:|7-commandAction|67|7-postCommandAction
+        }//GEN-END:|7-commandAction|67|7-postCommandAction
         // write post-action user code here
-    }//GEN-BEGIN:|7-commandAction|48|19-postAction
-//</editor-fold>//GEN-END:|7-commandAction|48|19-postAction
+    }//GEN-BEGIN:|7-commandAction|68|
+//</editor-fold>//GEN-END:|7-commandAction|68|
 
 
 
@@ -385,6 +426,7 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
             Modulo = new Form("Modulu", new Item[]{getTextField(), textField1, getSpacer()});//GEN-BEGIN:|14-getter|1|14-postInit
             Modulo.addCommand(getExitCommand());
             Modulo.addCommand(getOkCommand());
+            Modulo.addCommand(getHelpCommand1());
             Modulo.setCommandListener(this);//GEN-END:|14-getter|1|14-postInit
             // write post-init user code here
         }//GEN-BEGIN:|14-getter|2|
@@ -462,6 +504,7 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
             PrimeFactor = new Form("Prime Factorization", new Item[]{getTextField2()});//GEN-BEGIN:|37-getter|1|37-postInit
             PrimeFactor.addCommand(getExitCommand1());
             PrimeFactor.addCommand(getOkCommand1());
+            PrimeFactor.addCommand(getHelpCommand1());
             PrimeFactor.setCommandListener(this);//GEN-END:|37-getter|1|37-postInit
             // write post-init user code here
         }//GEN-BEGIN:|37-getter|2|
@@ -633,6 +676,7 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
             GCD = new Form("GCD", new Item[]{getTextField3(), getTextField4()});//GEN-BEGIN:|79-getter|1|79-postInit
             GCD.addCommand(getExitCommand());
             GCD.addCommand(getOkCommand3());
+            GCD.addCommand(getHelpCommand1());
             GCD.setCommandListener(this);//GEN-END:|79-getter|1|79-postInit
             // write post-init user code here
         }//GEN-BEGIN:|79-getter|2|
@@ -717,6 +761,7 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
             LCM = new Form("LCM", new Item[]{getTextField5(), getTextField6()});//GEN-BEGIN:|92-getter|1|92-postInit
             LCM.addCommand(getExitCommand());
             LCM.addCommand(getOkCommand4());
+            LCM.addCommand(getHelpCommand1());
             LCM.setCommandListener(this);//GEN-END:|92-getter|1|92-postInit
             // write post-init user code here
         }//GEN-BEGIN:|92-getter|2|
@@ -784,6 +829,7 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
             DeciToBinary = new Form("Decimal To Binary", new Item[]{getTextField7()});//GEN-BEGIN:|107-getter|1|107-postInit
             DeciToBinary.addCommand(getExitCommand());
             DeciToBinary.addCommand(getOkCommand5());
+            DeciToBinary.addCommand(getHelpCommand1());
             DeciToBinary.setCommandListener(this);//GEN-END:|107-getter|1|107-postInit
             // write post-init user code here
         }//GEN-BEGIN:|107-getter|2|
@@ -881,6 +927,7 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
             DeciToOcta = new Form("Decimal To Octadecimal", new Item[]{getTextField8()});//GEN-BEGIN:|133-getter|1|133-postInit
             DeciToOcta.addCommand(getExitCommand());
             DeciToOcta.addCommand(getOkCommand());
+            DeciToOcta.addCommand(getHelpCommand1());
             DeciToOcta.setCommandListener(this);//GEN-END:|133-getter|1|133-postInit
             // write post-init user code here
         }//GEN-BEGIN:|133-getter|2|
@@ -916,6 +963,7 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
             DeciToHexa = new Form("Decimal To Hexadecimal", new Item[]{getTextField9()});//GEN-BEGIN:|142-getter|1|142-postInit
             DeciToHexa.addCommand(getExitCommand());
             DeciToHexa.addCommand(getOkCommand6());
+            DeciToHexa.addCommand(getHelpCommand1());
             DeciToHexa.setCommandListener(this);//GEN-END:|142-getter|1|142-postInit
             // write post-init user code here
         }//GEN-BEGIN:|142-getter|2|
@@ -967,6 +1015,7 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
             BinaryToDeci = new Form("Binary To Decimal", new Item[]{getTextField10()});//GEN-BEGIN:|156-getter|1|156-postInit
             BinaryToDeci.addCommand(getExitCommand());
             BinaryToDeci.addCommand(getOkCommand7());
+            BinaryToDeci.addCommand(getHelpCommand1());
             BinaryToDeci.setCommandListener(this);//GEN-END:|156-getter|1|156-postInit
             // write post-init user code here
         }//GEN-BEGIN:|156-getter|2|
@@ -986,6 +1035,7 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
             OctaToDeci = new Form("Octadecimal To Decimal", new Item[]{getTextField11()});//GEN-BEGIN:|157-getter|1|157-postInit
             OctaToDeci.addCommand(getExitCommand());
             OctaToDeci.addCommand(getOkCommand8());
+            OctaToDeci.addCommand(getHelpCommand1());
             OctaToDeci.setCommandListener(this);//GEN-END:|157-getter|1|157-postInit
             // write post-init user code here
         }//GEN-BEGIN:|157-getter|2|
@@ -1005,6 +1055,7 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
             HexaToDeci = new Form("Hexadecimal To Decimal", new Item[]{getTextField12()});//GEN-BEGIN:|158-getter|1|158-postInit
             HexaToDeci.addCommand(getExitCommand());
             HexaToDeci.addCommand(getOkCommand9());
+            HexaToDeci.addCommand(getHelpCommand1());
             HexaToDeci.setCommandListener(this);//GEN-END:|158-getter|1|158-postInit
             // write post-init user code here
         }//GEN-BEGIN:|158-getter|2|
