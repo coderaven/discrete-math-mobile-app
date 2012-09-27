@@ -1,5 +1,6 @@
-discrete-math-mobile-app
-========================
+
+Discrete Mathematics Common Operations Mobile App
+=================================================
 
 A mobile java app created in Netbeans with J2ME platform. 
 This app is used for solving common Discrete Math calculations.
@@ -37,8 +38,9 @@ in the future :D
 For those who has Discrete Math as one of their subjects, feel free to use the app or modify the source code.
 I'll be updating it from time to time if I find another common calculations.
 
-(Samoka ani uie, gaka geek najud keu ko.. HAHA xD)
+(Samoka ani uie, gaka geek na ko.. HAHA xD)
 
 Screenshots
 -----------
 ![Discrete Math](http://i.imgur.com/YOtwY.jpg "Discrete Math Mobile Java App Screenshot")
+![Discrete Math 2](http://i.imgur.com/Eyf9d.png "Discrete Math Mobile Java App Screenshot 2")
