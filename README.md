@@ -4,6 +4,11 @@ discrete-math-mobile-app
 A mobile java app created in Netbeans with J2ME platform. 
 This app is used for solving common Discrete Math calculations.
 
+UPDATES:
+* September 27, 2012 : 
+  * Added step by step solving in all the calculations and operations.
+  * Added apk file for android users.
+
 How to install
 --------------
 
@@ -13,6 +18,11 @@ your phone). Then on your phone, open the file via file manager and install. Tha
 
 PS: This mobile app runs on almost every phone that supports Java (If you have Java games on your phone then
 you're good to go).
+
+UPDATE!! : 
+Android phone users can now use this mobile application to their smartphones. 
+Just go to the "put these files on your phone" folder and copy paste the .apk file to your phone then install :)
+
 
 The story behind
 ----------------
