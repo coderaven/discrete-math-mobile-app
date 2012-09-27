@@ -150,7 +150,15 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
             } else if (command == okCommand7) {//GEN-LINE:|7-commandAction|5|162-preAction
                 // write pre-action user code here
                 String binary = this.textField10.getString(); 
-                getResultBox().setString("The Decimal Equivalent is: \n" + Integer.parseInt(binary, 2));
+                int i,j;
+                
+                String step = "(" + binary + ") = ";
+                for (i = binary.length()-1 , j = 0; i >= 0; i--,j++){
+                    if (j < binary.length()-1) step += binary.charAt(j) + "(2^" + i + ") + ";
+                    else step += binary.charAt(j) + "(2^" + i + ")";
+                }
+                
+                getResultBox().setString(step + "\n\nThe Decimal Equivalent is: \n" + Integer.parseInt(binary, 2));
                 switchDisplayable(getResultBox(), getBinaryToDeci());//GEN-LINE:|7-commandAction|6|162-postAction
                 // write post-action user code here
             }//GEN-BEGIN:|7-commandAction|7|108-preAction
@@ -247,7 +255,15 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
             } else if (command == okCommand9) {//GEN-LINE:|7-commandAction|35|176-preAction
                 // write pre-action user code here
                 String hexa = this.textField12.getString(); 
-                getResultBox().setString("The Decimal Equivalent is: \n" + Integer.parseInt(hexa, 16));
+                int i,j;
+                
+                String step = "(" + hexa + ") = ";
+                for (i = hexa.length()-1 , j = 0; i >= 0; i--,j++){
+                    if (j < hexa.length()-1) step += Integer.parseInt(hexa.substring(j, j+1), 16) + "(16^" + i + ") + ";
+                    else step += Integer.parseInt(hexa.substring(j, j+1), 16) + "(16^" + i + ")";
+                }
+                
+                getResultBox().setString(step + "\n\nThe Decimal Equivalent is: \n" + Integer.parseInt(hexa, 16));
                 switchDisplayable(getResultBox(), getHexaToDeci());//GEN-LINE:|7-commandAction|36|176-postAction
                 // write post-action user code here
             }//GEN-BEGIN:|7-commandAction|37|95-preAction
@@ -266,10 +282,8 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
                 int b1 = Integer.parseInt(this.textField6.getString());
                 int iA = a1, iB = b1;
                 int tempG,gcdResult;
-                String gcdSteps = "";
                 
                 while (a1 != 0 && b1 != 0){
-                    gcdSteps += "GCD(" + a1 + "," + b1 + ") = GCD (" + b1 + "," + a1 + " % " + b1 + ")\n";
                     tempG = a1;
                     a1 = b1;
                     b1 = tempG % b1;
@@ -279,7 +293,10 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
                 else gcdResult = a1;
                 
                 int lcm = (iA * iB) / gcdResult;
-                getResultBox().setString("The LCM is : " + lcm);
+                getResultBox().setString("lcm(a,b) = (a*b) / gcd(a,b)\n"
+                                       + "lcm(" + iA + "," + iB + ") = (" + iA + "*" + iB + ") / " + "gcd(" + iA + "," + iB + ")\n"
+                                       + "lcm(" + iA + "," + iB + ") = (" + (iA*iB) + ") / " + gcdResult + "\n"
+                                       + "The LCM is : " + lcm);
                 switchDisplayable(getResultBox(), getLCM());//GEN-LINE:|7-commandAction|42|99-postAction
                 // write post-action user code here
             }//GEN-BEGIN:|7-commandAction|43|52-preAction
@@ -344,7 +361,14 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
             } else if (command == okCommand8) {//GEN-LINE:|7-commandAction|57|169-preAction
                 // write pre-action user code here
                 String octa = this.textField11.getString(); 
-                getResultBox().setString("The Decimal Equivalent is: \n" + Integer.parseInt(octa, 8));
+                int i,j;
+                
+                String step = "(" + octa + ") = ";
+                for (i = octa.length()-1 , j = 0; i >= 0; i--,j++){
+                    if (j < octa.length()-1) step += octa.charAt(j) + "(8^" + i + ") + ";
+                    else step += octa.charAt(j) + "(8^" + i + ")";
+                }
+                getResultBox().setString(step + "\n\nThe Decimal Equivalent is: \n" + Integer.parseInt(octa, 8));
                 switchDisplayable(getResultBox(), getOctaToDeci());//GEN-LINE:|7-commandAction|58|169-postAction
                 // write post-action user code here
             }//GEN-BEGIN:|7-commandAction|59|39-preAction
