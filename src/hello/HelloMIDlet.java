@@ -174,7 +174,15 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
             } else if (command == okCommand5) {//GEN-LINE:|7-commandAction|11|111-preAction
                 // write pre-action user code here
                 int deci = Integer.parseInt(this.textField7.getString()); 
-                getResultBox().setString("The Binary Equivalent is: \n" + Integer.toBinaryString(deci) );
+                int a = deci;
+                
+                String step = "form: decimal = 2(decimal/2) + remainder\n\nSteps:\n\n";
+                while (a != 0){
+                    step += a + " = 2(" + (int)(a/2) + ") + " + (a%2) + "\n";
+                    a /= 2;
+                }
+                
+                getResultBox().setString(step + "\n\nThe Binary Equivalent is: \n" + Integer.toBinaryString(deci) );
                 switchDisplayable(getResultBox(), getDeciToBinary());//GEN-LINE:|7-commandAction|12|111-postAction
                 // write post-action user code here
             }//GEN-BEGIN:|7-commandAction|13|143-preAction
@@ -190,7 +198,15 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
             } else if (command == okCommand6) {//GEN-LINE:|7-commandAction|17|146-preAction
                 // write pre-action user code here
                 int deci = Integer.parseInt(this.textField9.getString());
-                getResultBox().setString("The Hexadecimal Equivalent is: \n" + Integer.toHexString(deci) );
+                int a = deci;
+                
+                String step = "form: decimal = 16(decimal/16) + remainder\n\nSteps:\n\n";
+                while (a != 0){
+                    step += a + " = 16(" + (int)(a/16) + ") + " + Integer.toHexString((int)a%16) + "\n";
+                    a /= 16;
+                }
+                
+                getResultBox().setString(step + "\n\nThe Hexadecimal Equivalent is: \n" + Integer.toHexString(deci) );
                 switchDisplayable(getResultBox(), getDeciToHexa());//GEN-LINE:|7-commandAction|18|146-postAction
                 // write post-action user code here
             }//GEN-BEGIN:|7-commandAction|19|134-preAction
@@ -206,7 +222,15 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
             } else if (command == okCommand) {//GEN-LINE:|7-commandAction|23|136-preAction
                 // write pre-action user code here
                 int deci = Integer.parseInt(this.textField8.getString());
-                getResultBox().setString("The Octadecimal Equivalent is: \n" + Integer.toOctalString(deci) );
+                int a = deci;
+                
+                String step = "form: decimal = 8(decimal/8) + remainder\n\nSteps:\n\n";
+                while (a != 0){
+                    step += a + " = 8(" + (int)(a/8) + ") + " + (a%8) + "\n";
+                    a /= 8;
+                }
+                
+                getResultBox().setString(step + "\n\nThe Octadecimal Equivalent is: \n" + Integer.toOctalString(deci) );
                 switchDisplayable(getResultBox(), getDeciToOcta());//GEN-LINE:|7-commandAction|24|136-postAction
                 // write post-action user code here
             }//GEN-BEGIN:|7-commandAction|25|82-preAction
