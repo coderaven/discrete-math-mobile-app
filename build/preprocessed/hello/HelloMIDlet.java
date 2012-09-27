@@ -30,6 +30,8 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
     private Command okCommand9;
     private Command okCommand7;
     private Command helpCommand1;
+    private Command okCommand10;
+    private Command okCommand11;
     private Form Modulo;
     private TextField textField;
     private Spacer spacer;
@@ -58,6 +60,11 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
     private TextField textField11;
     private Form HexaToDeci;
     private TextField textField12;
+    private Form caesarEncryption;
+    private StringItem stringItem;
+    private TextField textField14;
+    private TextField textField13;
+    private Form customEncryption;
     private Image image1;
 //</editor-fold>//GEN-END:|fields|0|
 
@@ -351,6 +358,10 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
                     switchDisplayable(null,getOctaToDeci());
                 } else if (choiceGroup.getSelectedIndex() == 9){
                     switchDisplayable(null,getHexaToDeci());
+                } else if (choiceGroup.getSelectedIndex() == 10){
+                    switchDisplayable(null,getCaesarEncryption());
+                } else if (choiceGroup.getSelectedIndex() == 11){
+                    switchDisplayable(null,getCustomEncryption());
                 }
 //GEN-LINE:|7-commandAction|46|57-postAction
                 // write post-a ction user code here
@@ -428,17 +439,70 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
                 getResultBox().setString(pFactors);
                 switchDisplayable(getResultBox(), getPrimeFactor());//GEN-LINE:|7-commandAction|64|43-postAction
                 // write post-action user code here
-            }//GEN-BEGIN:|7-commandAction|65|119-preAction
-        } else if (displayable == splashScreen) {
-            if (command == SplashScreen.DISMISS_COMMAND) {//GEN-END:|7-commandAction|65|119-preAction
+            }//GEN-BEGIN:|7-commandAction|65|217-preAction
+        } else if (displayable == caesarEncryption) {
+            if (command == exitCommand) {//GEN-END:|7-commandAction|65|217-preAction
                 // write pre-action user code here
-                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|66|119-postAction
+                exitMIDlet();//GEN-LINE:|7-commandAction|66|217-postAction
                 // write post-action user code here
-            }//GEN-BEGIN:|7-commandAction|67|7-postCommandAction
-        }//GEN-END:|7-commandAction|67|7-postCommandAction
+            } else if (command == helpCommand1) {//GEN-LINE:|7-commandAction|67|218-preAction
+                // write pre-action user code here
+                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|68|218-postAction
+                // write post-action user code here
+            } else if (command == okCommand10) {//GEN-LINE:|7-commandAction|69|220-preAction
+                // write pre-action user code here
+                String encrypted = this.textField13.getString().trim().toLowerCase();
+                String real = this.textField14.getString().trim().toLowerCase();
+                String temp = "";
+
+                //This section establishes the alphabet in an ArrayList.
+                char[] reference = new char[100];
+                for(char i = 'a',j = 0; i <= 'a' + 25; i++, j++) reference[j] = i;
+
+                //This section handles the encryption
+                if (encrypted != null && !"".equals(encrypted)){
+                    for(int i = 0; i < encrypted.length(); i++){
+                         //Checks to see if the character is a letter
+                            temp += reference[ ( (encrypted.charAt(i)) - 3) %26];
+                     }
+                     textField14.setString(temp);
+                } else if (real != null && !"".equals(real)){
+                    for(int i = 0; i < real.length(); i++){
+                         //Checks to see if the character is a letter
+                            temp += reference[ ( reference.toString().indexOf(real.charAt(i)) + 1 + 3) %26];
+                     }
+                     textField13.setString(temp);
+                }  
+                
+               
+                
+                switchDisplayable(null, getCaesarEncryption());//GEN-LINE:|7-commandAction|70|220-postAction
+                // write post-action user code here
+            }//GEN-BEGIN:|7-commandAction|71|227-preAction
+        } else if (displayable == customEncryption) {
+            if (command == exitCommand) {//GEN-END:|7-commandAction|71|227-preAction
+                // write pre-action user code here
+                exitMIDlet();//GEN-LINE:|7-commandAction|72|227-postAction
+                // write post-action user code here
+            } else if (command == helpCommand1) {//GEN-LINE:|7-commandAction|73|228-preAction
+                // write pre-action user code here
+                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|74|228-postAction
+                // write post-action user code here
+            } else if (command == okCommand11) {//GEN-LINE:|7-commandAction|75|226-preAction
+                // write pre-action user code here
+                switchDisplayable(getResultBox(), getCustomEncryption());//GEN-LINE:|7-commandAction|76|226-postAction
+                // write post-action user code here
+            }//GEN-BEGIN:|7-commandAction|77|119-preAction
+        } else if (displayable == splashScreen) {
+            if (command == SplashScreen.DISMISS_COMMAND) {//GEN-END:|7-commandAction|77|119-preAction
+                // write pre-action user code here
+                switchDisplayable(null, getMenu());//GEN-LINE:|7-commandAction|78|119-postAction
+                // write post-action user code here
+            }//GEN-BEGIN:|7-commandAction|79|7-postCommandAction
+        }//GEN-END:|7-commandAction|79|7-postCommandAction
         // write post-action user code here
-    }//GEN-BEGIN:|7-commandAction|68|
-//</editor-fold>//GEN-END:|7-commandAction|68|
+    }//GEN-BEGIN:|7-commandAction|80|
+//</editor-fold>//GEN-END:|7-commandAction|80|
 
 
 
@@ -1222,6 +1286,126 @@ public class HelloMIDlet extends MIDlet implements CommandListener {
         return helpCommand1;
     }
 //</editor-fold>//GEN-END:|193-getter|2|
+
+//<editor-fold defaultstate="collapsed" desc=" Generated Getter: okCommand10 ">//GEN-BEGIN:|219-getter|0|219-preInit
+    /**
+     * Returns an initialized instance of okCommand10 component.
+     *
+     * @return the initialized component instance
+     */
+    public Command getOkCommand10() {
+        if (okCommand10 == null) {//GEN-END:|219-getter|0|219-preInit
+            // write pre-init user code here
+            okCommand10 = new Command("Ok", Command.OK, 0);//GEN-LINE:|219-getter|1|219-postInit
+            // write post-init user code here
+        }//GEN-BEGIN:|219-getter|2|
+        return okCommand10;
+    }
+//</editor-fold>//GEN-END:|219-getter|2|
+
+//<editor-fold defaultstate="collapsed" desc=" Generated Getter: caesarEncryption ">//GEN-BEGIN:|216-getter|0|216-preInit
+    /**
+     * Returns an initialized instance of caesarEncryption component.
+     *
+     * @return the initialized component instance
+     */
+    public Form getCaesarEncryption() {
+        if (caesarEncryption == null) {//GEN-END:|216-getter|0|216-preInit
+            // write pre-init user code here
+            caesarEncryption = new Form("Caesar\'s Encryption", new Item[]{getStringItem(), getTextField13(), getTextField14()});//GEN-BEGIN:|216-getter|1|216-postInit
+            caesarEncryption.addCommand(getExitCommand());
+            caesarEncryption.addCommand(getHelpCommand1());
+            caesarEncryption.addCommand(getOkCommand10());
+            caesarEncryption.setCommandListener(this);//GEN-END:|216-getter|1|216-postInit
+            // write post-init user code here
+        }//GEN-BEGIN:|216-getter|2|
+        return caesarEncryption;
+    }
+//</editor-fold>//GEN-END:|216-getter|2|
+
+//<editor-fold defaultstate="collapsed" desc=" Generated Getter: okCommand11 ">//GEN-BEGIN:|225-getter|0|225-preInit
+    /**
+     * Returns an initialized instance of okCommand11 component.
+     *
+     * @return the initialized component instance
+     */
+    public Command getOkCommand11() {
+        if (okCommand11 == null) {//GEN-END:|225-getter|0|225-preInit
+            // write pre-init user code here
+            okCommand11 = new Command("Ok", Command.OK, 0);//GEN-LINE:|225-getter|1|225-postInit
+            // write post-init user code here
+        }//GEN-BEGIN:|225-getter|2|
+        return okCommand11;
+    }
+//</editor-fold>//GEN-END:|225-getter|2|
+
+//<editor-fold defaultstate="collapsed" desc=" Generated Getter: customEncryption ">//GEN-BEGIN:|224-getter|0|224-preInit
+    /**
+     * Returns an initialized instance of customEncryption component.
+     *
+     * @return the initialized component instance
+     */
+    public Form getCustomEncryption() {
+        if (customEncryption == null) {//GEN-END:|224-getter|0|224-preInit
+            // write pre-init user code here
+            customEncryption = new Form("form");//GEN-BEGIN:|224-getter|1|224-postInit
+            customEncryption.addCommand(getOkCommand11());
+            customEncryption.addCommand(getExitCommand());
+            customEncryption.addCommand(getHelpCommand1());
+            customEncryption.setCommandListener(this);//GEN-END:|224-getter|1|224-postInit
+            // write post-init user code here
+        }//GEN-BEGIN:|224-getter|2|
+        return customEncryption;
+    }
+//</editor-fold>//GEN-END:|224-getter|2|
+
+//<editor-fold defaultstate="collapsed" desc=" Generated Getter: textField13 ">//GEN-BEGIN:|232-getter|0|232-preInit
+    /**
+     * Returns an initialized instance of textField13 component.
+     *
+     * @return the initialized component instance
+     */
+    public TextField getTextField13() {
+        if (textField13 == null) {//GEN-END:|232-getter|0|232-preInit
+            // write pre-init user code here
+            textField13 = new TextField("Encrypted Message:", "", 32, TextField.ANY);//GEN-LINE:|232-getter|1|232-postInit
+            // write post-init user code here
+        }//GEN-BEGIN:|232-getter|2|
+        return textField13;
+    }
+//</editor-fold>//GEN-END:|232-getter|2|
+
+//<editor-fold defaultstate="collapsed" desc=" Generated Getter: textField14 ">//GEN-BEGIN:|233-getter|0|233-preInit
+    /**
+     * Returns an initialized instance of textField14 component.
+     *
+     * @return the initialized component instance
+     */
+    public TextField getTextField14() {
+        if (textField14 == null) {//GEN-END:|233-getter|0|233-preInit
+            // write pre-init user code here
+            textField14 = new TextField("Real Message", "", 32, TextField.ANY);//GEN-LINE:|233-getter|1|233-postInit
+            // write post-init user code here
+        }//GEN-BEGIN:|233-getter|2|
+        return textField14;
+    }
+//</editor-fold>//GEN-END:|233-getter|2|
+
+//<editor-fold defaultstate="collapsed" desc=" Generated Getter: stringItem ">//GEN-BEGIN:|235-getter|0|235-preInit
+    /**
+     * Returns an initialized instance of stringItem component.
+     *
+     * @return the initialized component instance
+     */
+    public StringItem getStringItem() {
+        if (stringItem == null) {//GEN-END:|235-getter|0|235-preInit
+            // write pre-init user code here
+            stringItem = new StringItem("Instructions", "If you are given the encrypted message, then write it in the Encrypted Message box and the real message will be shown in the Real message box. You can do this vice versa but not both at the same time.");//GEN-LINE:|235-getter|1|235-postInit
+            // write post-init user code here
+        }//GEN-BEGIN:|235-getter|2|
+        return stringItem;
+    }
+//</editor-fold>//GEN-END:|235-getter|2|
 
 
 
